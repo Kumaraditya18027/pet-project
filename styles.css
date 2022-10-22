@@ -1,0 +1,187 @@
+#title
+/* to target the id's we need to use the # symbol */
+{
+    background-color: #ff4c68;
+    color:#fff;
+    /* #fff is the hex code for white and #000 is the hex code for the black */
+    /* we can add color to h1 or any other elemnt also but here we are writting it inside tilte section so that all the elements gets the color */
+}
+.container-fluid
+{
+  padding:3% 15% 7%;
+  /* top leftandright bottom; */
+}
+.top
+{
+    
+  font-family:"Montserrat-black",sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+body
+{
+  font-family: "Montserrat";
+}
+h2
+{
+  font-family: "Montserrat-bold";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3{
+  font-family: "Montserrat-bold";
+  font-size: 1.5rem;
+}
+p{
+  color:#8F8F8F;
+}
+/* navigation bar */
+.navbar
+{
+  /* position: relative; not compulsory */
+  padding-bottom:4.5rem;
+}
+.navbar-brand
+{
+  font-family: "ubuntu";
+  font-size: 2.5rem;
+  margin-left:0;
+}
+.nav-item
+{
+  padding:0 18px;
+}
+.nav-link
+{
+  font-size:1.2rem;
+  font-family:"Montserrat-light";
+}
+/* download buttons */
+.download-button/*custom class*/
+{
+  margin:5% 3% 5% 0;
+  /* top right left bottom */
+}
+/* title-image */
+.title-image
+{
+  width:20%;
+  transform:rotate(25deg);
+  /* This(rotate function) is used to rotate the element  */
+  position: absolute;
+  right:24%;
+}
+/* second section */
+.tick
+{
+  color:#ef8172;
+  font-size:5rem;
+  margin-bottom: 1rem;
+}
+.tick:hover
+{
+  color:#ff4c68;
+}
+#features
+{
+  padding:7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.feature-box
+{
+  text-align: center;
+  padding:5%;
+}
+/* testinomials */
+#testimonials
+{
+  
+  text-align: center;
+  background-color: #ef8172;
+  color:#fff;
+}
+.testinomial-image
+{
+   width: 10%;
+   border-radius: 100%;
+   /* to make the whole picture in a round frame */
+   margin: 17px;
+}
+.testinomial-image1
+{
+   width: 10%;
+   border-radius: 100%;
+   /* to make the whole picture in a round frame */
+   margin: 17px;
+}
+#press
+{
+  padding-bottom: 4%;
+  background-color: #ef8172;
+  text-align: center;
+}
+.press-logo
+{
+  width: 15%;
+  margin: 20px 20px 15px;
+}
+.carousel-item
+{
+  padding:7% 15%;
+  /* this id done to padd only the div not the whole section so that buttons are pushed and do not get affected ny the padding */
+}
+
+/* pricing section */
+#pricing
+{
+  padding:100px;
+  text-align: center;
+}
+.pricing-column
+{
+  padding:3% 2%;
+}
+@media(max-width:1002px)
+/* media query break points helps to achieve responsiveness to the website  */
+{
+   #title
+   {
+    text-align: center;
+   }
+  .title-image
+  {
+    position: static;
+    width:80%;
+    transform:rotate(0);
+    /* this is used for rotating 0 deg that n=means no rotation. */
+    
+  }
+}
+#cta
+/* remeber the height of the section or div is determined by the content inside it */
+{
+    background-color: #ff4c68;
+    text-align: center;
+    padding:7% 25%;
+    color:#fff
+}
+.foot-text
+{
+  font-family:"Montserrat-black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+#footer
+{
+  padding:7% 15%;
+  text-align: center;
+ 
+  background-color: #fff;
+}
+.social-media-icons
+{
+  
+  margin:2% 8px;
+}

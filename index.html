@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TinDog</title>
+  <!-- font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <!-- own stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1e3305e65c.js" crossorigin="anonymous"></script>
+  <!-- bootsrtrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-7mQhpDl5nRA5nY9lr8F1st2NbIly/8WqhjTp+0oFxEA/QUuvlbF6M1KXezGBh3Nb" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- Java script is responsible for any behaviour on the page so we need to link the java script part from bootsrtrap as well,if it is not added then the drop down button wil not going to work only with bootstrap link. -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- The style sheet is always linked after the bootstrap -->
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-expand-lg navbark-dark">
+        <!-- bg-dark willchange the background of nav bar  black -->
+        <a class="navbar-brand" style="color:white;" href=" ">tindog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <!--this for collapsing the nav bar into a drop down button for adapatibility in smalller view port-->
+
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="color:white;" href="#footer">contact</a>
+              <!-- we can refer particular section of the page using id's -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:white;" href="#pricing">pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:white;" href="#cta">Download</a>
+            </li>
+          </ul>
+
+      </nav>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- On any screen of large size the column should take half size of the row and for any other screen it take 100% of the row size -->
+          <h1 class="top"><b>Meet new and interesting dogs nearby</b>.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>
+            Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i
+              class="fa-brands fa-google-play"></i> Download</button>
+          <!-- btn-dark/light specify the type of button and btn-lg specify the size -->
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image"  src="iphone6.png" alt="iphone-mockup">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+
+    <div class="row">
+      <div class="col-lg-4 feature-box">
+        <i class="fa-sharp fa-solid fa-circle-check tick"></i>
+        <h3>Easy to use.</h3>
+        <p style="text-align: centre;">So easy to use, even your dog could do it.</p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-location-dot tick"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="fa-solid fa-heart tick"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <!-- carousel is being used for the slide shows -->
+    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+      <!--if data-bs-ride="carousel slide then it will be moving slide"-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- carousel-item active shows that this div will be active when we open the page -->
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testinomial-image" src="dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of
+            their life. I think.</h2>
+          <img class="testimonial-image" style="border-radius:100%;margin:17px;width:10%;" src="lady-img.jpg"
+            alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!--arai hidden is for visuallly impaired people
+        when their devoce or program reads the website-->
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="press-logo" src="techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="mashable.png" alt="mashable-logo">
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan for Every Dog's Needs</h2>
+    <p>Simple and affordable price plans for your and your dog.</p>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 pricing-column">
+        <!-- Remember the grid system any viewport smaller then the md size will take the 100% size -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <div class="d-grid">
+              <button type="button" class="btn btn-outline-dark btn-lg ">Sign Up</button>
+            </div>
+            <!-- here class="d-grid" is used to make the buttons of full block size -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 pricing-column">
+        <div class="card">
+          <div class="card-header">
+
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <div class="d-grid">
+              <button type="button" class="btn btn-dark btn-lg ">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 pricing-column">
+        <!--On any veiwport other than the lg size it will take 100% size-->
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <div class="d-grid pricing-column">
+              <button type="button" class="btn btn-dark btn-lg ">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="foot-text">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i>
+      Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-button"><i
+        class="fa-brands fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <i class="social-media-icons fa-brands fa-twitter"></i>
+    <i class="social-media-icons fa-brands fa-facebook"></i>
+    <i class="social-media-icons fa-brands fa-instagram"></i>
+    <i class="social-media-icons fa-solid fa-envelope"></i>
+    <p>© Copyright TinDog</p>
+
+  </footer>
+
+
+</body>
+
+</html>
